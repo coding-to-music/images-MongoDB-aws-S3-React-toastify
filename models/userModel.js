@@ -74,7 +74,7 @@ userSchema.virtual('myListings', {
  */
 // !!!!! THEY ONLY WORK WITH SAVE OR CREAT METHODS - NOT WITH FINDANDUPDATE, ETC.
 // Encrypt Password using Document Middleware
-// It will run before the data is persisted in the database
+// It will run before the data is persisted in the DB_CONNECTION
 userSchema.pre('save', async function (next) {
   //"isModified" Method in all documents to check if that field was modified
   if (!this.isModified('password')) return next();
