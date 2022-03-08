@@ -3,6 +3,10 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 const app = require('./app');
 
+console.log('AWS_ACCESS_KEY_ID', process.env.AWS_ACCESS_KEY_ID);
+console.log('AWS_ACCESS_KEY_SECRET', process.env.AWS_ACCESS_KEY_SECRET);
+console.log('AWS_BUCKET_NAME', process.env.AWS_BUCKET_NAME);
+
 mongoose
   .connect(process.env.DB_CONNECTION, {
     useUnifiedTopology: true,
