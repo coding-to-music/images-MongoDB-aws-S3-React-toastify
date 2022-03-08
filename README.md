@@ -31,7 +31,16 @@ http://localhost:8000/
 ## local development - client frontend
 
 ```java
+cd client
 
+npm run start
+
+http://localhost:3000/
+```
+
+To build the client:
+
+```java
 npm run heroku-postbuild
 
 http://localhost:3000/
