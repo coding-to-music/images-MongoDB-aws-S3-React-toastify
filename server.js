@@ -19,6 +19,7 @@ const server = app.listen(port, () => {
   console.log(`App running on port ${port}...🚀`);
 });
 
+//
 //Listener on the process to when we have a unhandled rejection (a promisse that got rejected and we didn't had a way to handle it)
 process.on('unhandledRejection', (err) => {
   console.log(err.name, err.message);
