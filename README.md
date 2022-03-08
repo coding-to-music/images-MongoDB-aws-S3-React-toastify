@@ -6,6 +6,8 @@ https://dev.to/theuserll/second-full-stack-app-roomie-find-a-room-to-rent-built-
 
 https://roomiew.herokuapp.com/listing/5ed30e7234c5050017aba606
 
+https://roomate-s3-mongodb.herokuapp.com/
+
 https://github.com/lucasmrl/roomie
 
 https://github.com/coding-to-music/aws-S3-images-MongoDB-Node-Express-React-hooks-express-tailwind
@@ -13,6 +15,48 @@ https://github.com/coding-to-music/aws-S3-images-MongoDB-Node-Express-React-hook
 A platform to find roommates by listing your space or finding one available.
 
 Built with **React/Express/MongoDB/Tailwind**. 🚀
+
+## local development - server backend
+
+```java
+# I needed to change the package.json node version to ">=12.13.0"
+
+npm run install
+
+npm run dev
+
+http://localhost:8000/
+```
+
+## local development - client frontend
+
+```java
+
+npm run heroku-postbuild
+
+http://localhost:3000/
+```
+
+## Heroku deployment of the backend
+
+Use the heroku CLI to create a new app, give it a name:
+
+```java
+heroku create roomate-s3-mongodb
+```
+
+- Then go to the Heroku dashboard and connect to the GitHub repo
+- Click to allow automatic deployment
+- Then do another push and the changes will be picked up by Heroku
+- That is for the server (backend)
+
+Need to set the Heroku environment variables:
+
+```java
+Need to determine which variables to set
+```
+
+## Features
 
 My second full-stack project. 😬
 
