@@ -16,6 +16,17 @@ A platform to find roommates by listing your space or finding one available.
 
 Built with **React/Express/MongoDB/Tailwind**. 🚀
 
+## Tasks
+
+- display build details in the app
+- test login
+- test S3 upload
+- test MongoDB writing
+- load sample data
+- test maps
+- get some live data such as weather
+- Embed MongoDB Charts
+
 ## local development - server backend
 
 ```java
