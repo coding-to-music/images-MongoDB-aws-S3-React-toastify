@@ -46,6 +46,55 @@ npm run heroku-postbuild
 http://localhost:3000/
 ```
 
+## change Node versions with NVM
+
+```java
+# get latest version of Node
+
+nvm install node
+
+# use a specific version of Node
+
+nvm use stable
+Now using node v17.6.0 (npm v8.5.1)
+
+nvm use v14.18.1
+Now using node v14.18.1 (npm v8.1.0)
+
+nvm use v16.14.0
+Now using node v16.14.0 (npm v8.3.1)
+
+# list available versions of node
+
+nvm ls-remote
+
+nvm ls-remote | tail
+
+```
+
+List available versions of node:
+
+```java
+nvm ls
+       v14.18.1
+       v16.14.0
+->      v17.6.0
+         system
+default -> 14.18.1 (-> v14.18.1)
+iojs -> N/A (default)
+unstable -> N/A (default)
+node -> stable (-> v17.6.0) (default)
+stable -> 17.6 (-> v17.6.0) (default)
+lts/* -> lts/gallium (-> v16.14.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.10 (-> N/A)
+lts/fermium -> v14.19.0 (-> N/A)
+lts/gallium -> v16.14.0
+```
+
 ## Heroku deployment of the backend
 
 Use the heroku CLI to create a new app, give it a name:

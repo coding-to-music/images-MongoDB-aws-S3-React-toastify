@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A platform to find roommates by listing your space or finding one available. Built with React/Express/MongoDB/Tailwind.",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "main": "server.js",
   "scripts": {
