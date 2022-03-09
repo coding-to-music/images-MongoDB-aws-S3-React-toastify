@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const mongoose = require('mongoose');
-const validator = require('validator');
+// const validator = require('validator');
 const bcrypt = require('bcryptjs');
 
 //Defining the Schema
@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     required: [true, 'Please provide your email'],
     unique: true,
     lowercase: true,
-    validate: [validator.isEmail, 'Please provide a valid email'],
+    // validate: [validator.isEmail, 'Please provide a valid email'],
   },
   role: {
     type: String,
@@ -31,13 +31,13 @@ const userSchema = new mongoose.Schema({
   passwordConfirm: {
     type: String,
     required: [true, 'Please confirm your password'],
-    validate: {
+    // validate: {
       // This only works on SAVE/CREATE
-      validator: function (el) {
-        return el === this.password;
-      },
-      message: 'Passwords are not the same!',
-    },
+      // validator: function (el) {
+        // return el === this.password;
+      // },
+      // message: 'Passwords are not the same!',
+    // },
   },
   profilePicture: String,
   about: {

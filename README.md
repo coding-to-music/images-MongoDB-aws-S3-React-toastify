@@ -133,6 +133,20 @@ AWS_BUCKET_NAME: my-site-images-test
 heroku logs --tail
 ```
 
+Use heroku ps to determine the number of dynos that are executing. The list indicates the process type in the left column, and the command corresponding to that process type in the right column:
+
+```java
+heroku ps
+
+Free dyno hours quota remaining this month: 548h 30m (99%)
+Free dyno usage for this app: 0h 0m (0%)
+For more information on dyno sleeping and how to upgrade, see:
+https://devcenter.heroku.com/articles/dyno-sleeping
+
+=== web (Free): npm start (1)
+web.1: crashed 2022/03/09 05:08:47 +0000 (~ 1m ago)
+```
+
 ## create a local build
 
 ```java
