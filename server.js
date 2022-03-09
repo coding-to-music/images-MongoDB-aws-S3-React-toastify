@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 const app = require('./app');
 
+// test connection
+
 mongoose
   .connect(process.env.DB_CONNECTION, {
     useUnifiedTopology: true,
