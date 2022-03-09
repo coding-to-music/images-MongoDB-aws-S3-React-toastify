@@ -59,10 +59,23 @@ heroku create roomate-s3-mongodb
 - Then do another push and the changes will be picked up by Heroku
 - That is for the server (backend)
 
-Need to set the Heroku environment variables:
+## Need to set the Heroku environment variables:
+
+Initially they are empty
 
 ```java
-Need to determine which variables to set
+heroku config
+=== roomate-s3-mongodb Config Vars
+```
+
+```java
+heroku config:set DB_CONNECTION="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+Setting DB_CONNECTION and restarting ⬢ roomate-s3-mongodb... done, v5
+DB_CONNECTION: mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+heroku config:set AWS_BUCKET_NAME="my-site-images-test"
+Setting AWS_BUCKET_NAME and restarting ⬢ roomate-s3-mongodb... done, v6
+AWS_BUCKET_NAME: my-site-images-test
 ```
 
 ## Features
