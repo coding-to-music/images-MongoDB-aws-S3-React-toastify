@@ -78,6 +78,18 @@ Setting AWS_BUCKET_NAME and restarting ⬢ roomate-s3-mongodb... done, v6
 AWS_BUCKET_NAME: my-site-images-test
 ```
 
+## Monitor the progress of the deployment:
+
+```java
+heroku logs --tail
+```
+
+## create a local build
+
+```java
+npm run heroku:postbuild
+```
+
 ## Features
 
 My second full-stack project. 😬
