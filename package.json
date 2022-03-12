@@ -1,7 +1,7 @@
 {
-  "name": "roomie-backend",
+  "name": "images-MongoDB-aws-S3-React-toastify$-backend",
   "version": "1.0.0",
-  "description": "A platform to find roommates by listing your space or finding one available. Built with React/Express/MongoDB/Tailwind.",
+  "description": "Store Images to AWS S3 and to MongoDB Atlas, Built with React/Express/MongoDB/Tailwind.",
   "engines": {
     "node": "16.x"
   },
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasmrl/roomie.git"
+    "url": "git+https://github.com/lucasmrl/images-MongoDB-aws-S3-React-toastify$.git"
   },
   "keywords": [
     "react",

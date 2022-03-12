@@ -1,6 +1,12 @@
-# Roomie
+# images-MongoDB-aws-S3-React-toastify
 
-(project created for learning)
+https://github.com/coding-to-music/images-MongoDB-aws-S3-React-toastify
+
+Foundation built on:
+
+https://github.com/coding-to-music/aws-S3-images-MongoDB-Node-Express-React-hooks-tailwind
+
+https://github.com/coding-to-music/react-tracker
 
 https://dev.to/theuserll/second-full-stack-app-roomie-find-a-room-to-rent-built-with-react-tailwindcss-express-mongodb-heroku-s3-4d2h
 

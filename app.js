@@ -7,10 +7,10 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
-const AppError = require('./utils/appError');
-const globalErrorHandler = require('./controllers/errorController');
-const listingRouter = require('./routes/listingRouter');
-const userRouter = require('./routes/userRouter');
+const AppError = require('./src/utils/appError');
+const globalErrorHandler = require('./src/controllers/errorController');
+const listingRouter = require('./src/routes/listingRouter');
+const userRouter = require('./src/routes/userRouter');
 const path = require('path');
 
 app.enable('trust proxy');
