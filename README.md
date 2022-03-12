@@ -202,7 +202,7 @@ Commit your code to the repository and deploy it to Heroku using Git.
 ```java
 git add .
 git commit -am "make it better"
-git push heroku master
+git push heroku main
 ```
 
 You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
