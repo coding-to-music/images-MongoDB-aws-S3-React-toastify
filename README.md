@@ -36,7 +36,7 @@ Built with **React/Express/MongoDB/Tailwind**. 🚀
 ## local development - server backend
 
 ```java
-# I needed to change the package.json node version to ">=12.13.0"
+# I needed to change the package.json node version to ">=16.X"
 
 npm run install
 

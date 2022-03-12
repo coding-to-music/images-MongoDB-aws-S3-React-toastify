@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasmrl/images-MongoDB-aws-S3-React-toastify$.git"
+    "url": "git+https://github.com/coding-to-music/images-MongoDB-aws-S3-React-toastify.git"
   },
   "keywords": [
     "react",
@@ -23,12 +23,12 @@
     "tailwind",
     "javascript"
   ],
-  "author": "Lucas Melo R. de Lima",
+  "author": "coding-to-music",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lucasmrl/roomie/issues"
+    "url": "https://github.com/coding-to-music/images-MongoDB-aws-S3-React-toastify/issues"
   },
-  "homepage": "https://github.com/lucasmrl/roomie#readme",
+  "homepage": "https://github.com/coding-to-music/images-MongoDB-aws-S3-React-toastify#readme",
   "dependencies": {
     "aws-sdk": "^2.678.0",
     "axios": "^0.21.1",
