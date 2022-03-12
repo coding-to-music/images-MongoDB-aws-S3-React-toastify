@@ -20,6 +20,10 @@ import NotFound from './components/NotFound';
 import PasswordReset from './components/PasswordReset';
 import NewPassword from './components/NewPassword';
 import ScrollToTop from './ScrollToTop.js';
+import buildInfo from './components/buildInfo';
+import moment from 'moment';
+
+const buildDate = new Date(buildInfo.buildDate);
 
 function NavbarGuest() {
   const [isOpen, setIsOpen] = useState(false);
@@ -185,7 +189,17 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Images from Unsplash
+                  Version: {buildInfo.buildVersion}
+                </a>
+              </li>
+              <li className="lg:mx-10">
+                <a
+                  href="https://unsplash.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Build Date:
+                  {moment(buildDate).format('MM/DD/YYYY hh:mm')}
                 </a>
               </li>
               {/* <li className="lg:mx-10">

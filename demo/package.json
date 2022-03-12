@@ -1,0 +1,29 @@
+{
+  "name": "react-tracker-demo-for-images-MongoDB-aws-S3",
+  "version": "0.1.12",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "gh-pages": "^3.2.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.29.1",
+    "react": "^15.5.4",
+    "react-build-info": "^0.0.3",
+    "react-dom": "^15.5.4",
+    "react-highlight": "^0.10.0",
+    "react-redux": "^5.0.4",
+    "react-toastify": "^3.3.1",
+    "react-tracker": "0.0.8",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.9.5"
+  },
+  "scripts": {
+    "start": "PORT=4000 react-scripts start",
+    "build": "PORT=4000 npm version patch && react-build-info && react-scripts build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject --no-cache"
+  }
+}
