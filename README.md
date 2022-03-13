@@ -90,15 +90,15 @@ Enabling nodejs-language-metrics for images-mongodb-aws-s3... done
 ```
 
 ## Redeploy
+
 Once you have enabled the Enhanced Language Metrics feature re-deploy your application using an empty commit.
 
 ```java
 git commit --allow-empty -m "Enable Node.js Language Metrics"
-git push heroku master
+git push heroku main
 ```
 
 After a few minutes, you will begin receiving metrics which can be viewed via the Application Metrics tab.
-
 
 ## change Node versions with NVM
 
