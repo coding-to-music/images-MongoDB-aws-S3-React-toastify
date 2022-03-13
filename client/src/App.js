@@ -172,7 +172,7 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   Build Date:
-                  {formatDistance(subDays(new Date()), buildDate, {
+                  {formatDistance(subDays(new Date(), 3), new Date(), {
                     addSuffix: true,
                   })}
                   {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
@@ -185,7 +185,7 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   Build Date:
-                  {formatDistance(subDays(new Date(), 3), buildDate, {
+                  {formatDistance(subDays(new Date(), buildDate), {
                     addSuffix: true,
                   })}
                   {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
@@ -206,10 +206,8 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Build Date:
-                  {formatDistance(subDays(new Date(), 3), buildDate, {
-                    addSuffix: true,
-                  })}
+                  Build Date:{' '}
+                  {formatDistance(subDays(new Date(), 3), new Date())}
                   {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
                 </a>
               </li>
