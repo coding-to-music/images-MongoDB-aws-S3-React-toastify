@@ -63,6 +63,8 @@ http://localhost:3000/
 To build the client:
 
 ```java
+# not needed unless you have a specific odd build process
+
 npm run heroku-postbuild
 
 http://localhost:3000/

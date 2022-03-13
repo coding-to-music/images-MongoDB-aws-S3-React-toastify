@@ -199,7 +199,7 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   Build Date:
-                  {moment(buildDate).format('MM/DD/YYYY hh:mm')}
+                  {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')}
                 </a>
               </li>
               {/* <li className="lg:mx-10">
