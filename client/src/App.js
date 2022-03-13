@@ -20,8 +20,8 @@ import NotFound from './components/NotFound';
 import PasswordReset from './components/PasswordReset';
 import NewPassword from './components/NewPassword';
 import ScrollToTop from './ScrollToTop.js';
-import buildInfo from './components/buildInfo';
-import moment from 'moment';
+import buildInfo from './buildInfo';
+import { formatDistance, subDays } from 'date-fns';
 
 const buildDate = new Date(buildInfo.buildDate);
 
@@ -167,20 +167,28 @@ export default function App() {
               </li>
               <li className="lg:mx-10">
                 <a
-                  href="https://icons8.com/icon/tg0qF8v_aLU2/empty-bed"
+                  href="https://unsplash.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Empty Bed icon by Icons8
+                  Build Date:
+                  {formatDistance(subDays(new Date(), 3), buildDate, {
+                    addSuffix: true,
+                  })}
+                  {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
                 </a>
               </li>
               <li className="lg:mx-10">
                 <a
-                  href="https://blush.design/"
+                  href="https://unsplash.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Illustration by Blush.design
+                  Build Date:
+                  {formatDistance(subDays(new Date(), 3), buildDate, {
+                    addSuffix: true,
+                  })}
+                  {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
                 </a>
               </li>
               <li className="lg:mx-10">
@@ -199,7 +207,10 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   Build Date:
-                  {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')}
+                  {formatDistance(subDays(new Date(), 3), buildDate, {
+                    addSuffix: true,
+                  })}
+                  {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}
                 </a>
               </li>
               {/* <li className="lg:mx-10">

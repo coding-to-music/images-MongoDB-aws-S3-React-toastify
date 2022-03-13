@@ -60,14 +60,14 @@ npm run start
 http://localhost:3000/
 ```
 
-To build the client:
+### Deploy your application
+
+Commit your code to the repository and deploy it to Heroku using Git.
 
 ```java
-# not needed unless you have a specific odd build process
-
-npm run heroku-postbuild
-
-http://localhost:3000/
+git add .
+git commit -am "make it better"
+git push heroku main
 ```
 
 ## change Node versions with NVM

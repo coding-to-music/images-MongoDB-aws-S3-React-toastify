@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "dev": "nodemon server.js",
+    "dev": "kill-port 8000 && nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
     "buildDemo": "cd demo && npm run build",
     "deployDemo": "gh-pages -d demo/build"
