@@ -172,7 +172,7 @@ export default function App() {
                   rel="noopener noreferrer"
                 >
                   Build Date:
-                  {formatDistance(subDays(new Date(), 3), buildDate, {
+                  {formatDistance(subDays(new Date()), buildDate, {
                     addSuffix: true,
                   })}
                   {/* {moment(buildDate).format('dddd MM/DD/YYYY hh:mm A')} */}

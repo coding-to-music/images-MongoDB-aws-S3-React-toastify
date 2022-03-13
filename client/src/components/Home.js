@@ -27,9 +27,8 @@ function Home(props) {
             Find Your Images with <span className="font-bold">ImageApp!</span>
           </h1>
           <p className="font-light text-gray-700 text-xl md:text-2xl">
-            Easy as making friends, with ImageApp you can look for many
-            <br className="hidden md:inline lg:hidden" /> rooms available across
-            the country.
+            With ImageApp search by phrase, image content, text and objects and
+            find the best match.
           </p>
           <div className="flex items-center my-auto py-8 md:w-full">
             <form
@@ -38,7 +37,7 @@ function Home(props) {
             >
               <AlgoliaPlaces
                 className="w-64 px-10 md:px-16 shadow p-1 appearance-none text-xl border lg:text-xl rounded-lg text-gray-700 focus:outline-none focus:shadow-outline text-center md:w-full md:flex-grow"
-                placeholder="Enter a City"
+                placeholder="Search for Anything"
                 options={{
                   appId: process.env.REACT_APP_APP,
                   apiKey: process.env.REACT_APP_APPK,
@@ -85,7 +84,7 @@ function Home(props) {
                 }}
                 className="hidden py-2 text-orange-400 text-sm sm:block sm:p-0 sm:m-0"
               >
-                All Available Rooms
+                All Available Exhibits
               </Link>
             </div>
           </div>

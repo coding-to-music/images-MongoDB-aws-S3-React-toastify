@@ -70,6 +70,36 @@ git commit -am "make it better"
 git push heroku main
 ```
 
+## Enable the Heroku add-on for enhanced metrics
+
+https://devcenter.heroku.com/articles/language-runtime-metrics-nodejs#getting-started
+
+```java
+heroku labs:enable "runtime-heroku-metrics" -a images-mongodb-aws-s3
+heroku labs:enable "nodejs-language-metrics" -a images-mongodb-aws-s3
+```
+
+```java
+heroku labs:enable "runtime-heroku-metrics" -a images-mongodb-aws-s3
+
+Enabling runtime-heroku-metrics for images-mongodb-aws-s3... done
+
+heroku labs:enable "nodejs-language-metrics" -a images-mongodb-aws-s3
+
+Enabling nodejs-language-metrics for images-mongodb-aws-s3... done
+```
+
+## Redeploy
+Once you have enabled the Enhanced Language Metrics feature re-deploy your application using an empty commit.
+
+```java
+git commit --allow-empty -m "Enable Node.js Language Metrics"
+git push heroku master
+```
+
+After a few minutes, you will begin receiving metrics which can be viewed via the Application Metrics tab.
+
+
 ## change Node versions with NVM
 
 ```java
