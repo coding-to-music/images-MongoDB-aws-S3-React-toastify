@@ -6,7 +6,7 @@ const app = require('./app');
 // test connection
 
 mongoose
-  .connect(process.env.DB_CONNECTION, {
+  .connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -18,7 +18,7 @@ mongoose
 
 const port = process.env.PORT || 8000;
 const server = app.listen(port, () => {
-  console.log(`App running on port ${port}...🚀`);
+  console.log(`App running at http://localhost:${port}  ...🚀`);
 });
 
 //Listener on the process to when we have a unhandled rejection (a promisse that got rejected and we didn't had a way to handle it)

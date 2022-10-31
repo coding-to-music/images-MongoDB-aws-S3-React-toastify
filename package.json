@@ -11,6 +11,7 @@
     "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "kill-port 8000 && nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js",
+    "deploy": "git add . && git commit -m Build && git push",
     "buildDemo": "cd demo && npm run build",
     "deployDemo": "gh-pages -d demo/build"
   },
